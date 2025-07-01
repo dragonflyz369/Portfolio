@@ -9,8 +9,7 @@ export default function Header() {
             <nav>
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                        <img src="logoNew.png" className="h-18 md:h-24" alt="Jessie Logo" />
                     </a>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
@@ -21,10 +20,10 @@ export default function Header() {
                     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                         <ul className="font-medium text-background flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:border-gray-700">
                             <li>
-                                <a href="#" className="hover:text-background-dark" aria-current="page">Home</a>
+                                <div onClick={() => router.push('/')} className="hover:text-background-dark" aria-current="page">Home</div>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-background-dark">About</a>
+                                <div onClick={() => router.push('/about')} className="hover:text-background-dark">About</div>
                             </li>
                             <li>
                                 <div onClick={() => router.push('/examples')} className="hover:text-background-dark">Examples</div>
