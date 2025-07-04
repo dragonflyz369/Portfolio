@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 import withFlowbiteReact from "flowbite-react/plugin/nextjs";
 
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: isProd ? '/Portfolio' : '',
-  assetPrefix: isProd ? '/Portfolio' : '',
+  basePath: '/Portfolio',
+  assetPrefix: '/Portfolio',
   images: {
     dangerouslyAllowSVG: true
   }
