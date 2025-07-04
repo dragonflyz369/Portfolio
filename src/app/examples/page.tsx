@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import { getAll } from "../api/project";
 
 export default async function Page() {
@@ -9,7 +10,7 @@ export default async function Page() {
                 {items.map((item) => (
                     <div key={item.id} className="max-w-lg h-full flex flex-col bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
                         <a href={item.links}>
-                            <img className="rounded-t-lg" src={'/images/' + item.image} alt="" />
+                            <Image className="rounded-t-lg" src={'./images/' + item.image} alt="" />
                         </a>
                         <div className="p-5 grow">
                             <a href={item.links}>
