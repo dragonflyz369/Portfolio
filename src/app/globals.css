@@ -7,7 +7,7 @@
   --foreground: #092f68;
   --background-dark: #2fb195;
   --foreground-dark: #004a7e;
-  --bg-image: url("./lightBG.svg");
+  --bg-image: url("/lightBG.svg");
 }
 
 @theme inline {
@@ -25,7 +25,7 @@
     --foreground: #72ddb3;
     --background-dark: #004a7e;
     --foreground-dark: #2fb195;
-    --bg-image: url("./darkBG.svg");
+    --bg-image: url("/darkBG.svg");
   }
 }
 
